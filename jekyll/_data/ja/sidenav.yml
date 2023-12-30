@@ -1,0 +1,1295 @@
+---
+en:
+  - 
+    name: 作業を開始する
+    children:
+      - 
+        name: 概要
+        children:
+          - 
+          - 
+          - 
+            name: CircleCI について
+          - 
+            name: コンセプト
+            link: コンセプト
+          - 
+            name: FAQ
+      - 
+        name: オンボーディング
+      - 
+        children:
+          - 
+            name: 設定のチュートリアル
+            link: コンフィグの概要
+          - 
+            name: クイックスタートガイド
+            link: はじめよう
+          - 
+            name: Hello World
+            link: Hello World
+          - 
+            name: Slack Orb の設定
+            link: Slack Orb のチュートリアル
+      - 
+        name: VCS との連携
+        children:
+          - 
+            name: GitHub
+            link: GitHub との連携
+          - 
+            name: Bitbucket
+            link: bitbucket との連携
+          - 
+            name: GitLab
+            link: gitLab との連携
+      - 
+        name: 移行
+        children:
+          - 
+            name: CircleCI への移行ガイド
+            link: 移行の概要
+          - 
+            name: AWS からの移行
+            link: AWS からの移行
+          - 
+            name: Azure DevOps からの移行
+            link: Azure DevOps からの移行
+          - 
+            name: Buildkite からの移行
+            link: buildkite からの移行
+          - 
+            name: Github Actions からの移行
+            link: GitHub からの移行
+          - 
+            name: GitLab からの移行
+            link: GitLab からの移行
+          - 
+            name: Jenkins からの移行
+            link: Jenkins からの移行
+          - 
+            name: TeamCity からの移行
+            link: TeamCity からの移行
+          - 
+            name: Travis CI からの移行
+            link: Travis からの移行
+  - 
+    name: パイプライン
+    icon: icons/sidebar/pipelines.svg
+    children:
+      - 
+        name: 会社概要
+        children:
+          - 
+            name: パイプラインの概要
+            link: パイプライン
+          - 
+            name: トリガーの概要
+            link: トリガーの概要
+          - 
+            name: パイプラインのスキップとキャンセル
+            link: ビルドのスキップ
+      - 
+        name: 機能
+        children:
+          - 
+            name: パイプラインのスケジューリング
+            link: パイプラインのスケジュール実行
+          - 
+            name: ワークフロー
+            link: workflows
+          - 
+            name: ジョブとステップ
+            link: ジョブとステップ
+          - 
+            name: ワークスペース
+            link: ワークスペース
+          - 
+            name: アーティファクト
+            link: artifacts
+          - 
+            name: Docker レイヤーキャッシュ
+            link: Docker レイヤー キャッシュ
+          - 
+            name: 同時実行
+            link: 同時実行件数
+          - 
+            name: 環境変数の概要
+          - 
+            name: テストデータの収集
+          - 
+          - 
+            name: SSH を使用したデバッグ
+          - 
+            name: テスト分割と並列実行
+          - 
+          - 
+      - 
+        name: 最適化
+        children:
+          - 
+            name: 概要
+            link: 最適化
+          - 
+          - 
+            name: 依存関係のキャッシュ
+            link: caching
+          - 
+            name: キャッシュ戦略
+          - 
+            name: パイプライン値とパラメーター
+      - 
+        children:
+          - 
+          - 
+          - 
+            name: スケジュール実行化したワークフローをパイプラインのスケジュール実行に移行
+          - 
+            name: パイプラインのスケジュール実行を夜間に設定する
+          - 
+            name: 複数のワークフローを使ったパイプラインのスケジュール実行
+          - 
+            name: CircleCI CLI を使用したテスト分割
+      - 
+        name: チュートリアル
+        children:
+          - 
+            name: テストの分割
+  - 
+    name: 実行環境
+    icon: icons/sidebar/executors.svg
+    children:
+      - 
+        name: 会社概要
+        children:
+          - 
+            name: 実行環境の概要
+          - 
+          - 
+      - 
+        name: Docker
+        children:
+          - 
+            name: Docker の使用
+          - 
+            name: CircleCI イメージ
+            link: circleci-images
+          - 
+          - 
+          - 
+          - 
+          - 
+      - 
+        name: Linux VM
+      - 
+        name: macOS
+        children:
+          - 
+            name: macOS を使用する
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+      - 
+        name: Windows
+        children:
+          - 
+            name: Windows の使用
+          - 
+            name: Hello World
+      - 
+        name: GPU
+        children:
+          - 
+            name: GPU を使用する
+      - 
+        name: Arm
+      - 
+        name: セルフホストランナー
+      - 
+        name: コンテナランナー
+        children:
+          - 
+          - 
+            link: container-runner
+      - 
+        name: マシンランナー
+        children:
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: CircleCI Server 上のマシンランナーのアップグレード
+          - 
+            name: マシンランナーの設定ファイルのリファレンス
+  - 
+    name: 設定ファイル入門ガイド
+    icon: icons/sidebar/configure.svg
+    children:
+      - 
+        name: 概要
+        children:
+          - 
+            name: 設定ガイド
+            link: コンフィグの概要
+          - 
+          - 
+      - 
+        name: 参考情報
+        children:
+          - 
+            name: 設定ファイルのリファレンス
+          - 
+          - 
+            name: 高度な設定
+          - 
+            name: JavaScript Node のデモ プロジェクトのビルド
+          - 
+      - 
+        children:
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: 組織名とリポジトリ名の変更
+          - 
+  - 
+    icon: icons/sidebar/orbs.svg
+    children:
+      - 
+        name: Orb の使用
+      - 
+        children:
+          - 
+          - 
+          - 
+          - 
+            name: Orb 開発キット
+      - 
+      - 
+        children:
+          - 
+            name: Orb のパブリッシュプロセス
+      - 
+        name: チュートリアル
+        children:
+          - 
+          - 
+            name: Slack Orb の使用
+            link: Slack Orb のチュートリアル
+      - 
+      - 
+        name: 参考情報
+        children:
+          - 
+          - 
+            name: Orb に関するよくあるご質問
+          - 
+          - 
+            name: 設定ファイルのリファレンス
+          - 
+  - 
+    name: インサイト
+    icon: icons/sidebar/insights.svg
+    children:
+      - 
+        name: 概要
+        link: insights
+      - 
+        name: メトリクス用語集
+      - 
+      - 
+        name: テスト インサイト（Test Insights）
+      - 
+      - 
+        name: Insights API
+        link: 'https://circleci.com/docs/api/v2#tag/Insights'
+  - 
+    name: プロジェクト
+    icon: icons/sidebar/projects.svg
+    children:
+      - 
+        name: 概要
+        children:
+          - 
+            link: projects
+          - 
+      - 
+        name: settings
+        children:
+          - 
+            link: settings
+          - 
+            name: GitHub Checks の有効化
+          - 
+          - 
+          - 
+            link: notifications
+          - 
+          - 
+          - 
+            name: ステータスバッジ
+          - 
+            name: Using Credits
+            link: webhooks
+          - 
+            link: クレジット
+      - 
+        name: security
+        children:
+          - 
+          - 
+            name: コンテキスト
+            link: コンテキスト
+          - 
+            name: シークレットの安全な取り扱い
+          - 
+          - 
+            name: サプライチェーン攻撃への対策
+          - 
+            name: IP アドレスの範囲機能
+          - 
+          - 
+            name: 監査ログ
+            link: audit-logs
+          - 
+            name: CircleCI のセキュリティ対策
+            link: security
+      - 
+  - 
+    icon: icons/sidebar/examples.svg
+    children:
+      - 
+        name: 言語
+        children:
+          - 
+            name: 概要
+          - 
+            name: Node
+          - 
+            name: Python
+      - 
+      - 
+        name: テスト
+        children:
+          - 
+            name: 概要
+            link: test
+          - 
+            name: ブラウザーでのテスト
+  - 
+    name: デプロイ
+    icon: icons/sidebar/deployment.svg
+    children:
+      - 
+      - 
+      - 
+        name: Artifactory へのデプロイ
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+        name: Google Cloud SDK の承認
+      - 
+      - 
+      - 
+        name: iOS アプリケーションのデプロイ
+      - 
+      - 
+      - 
+  - 
+    name: 参考情報
+    icon: icons/sidebar/reference.svg
+    children:
+      - 
+        children:
+          - 
+            name: 設定ファイルのリファレンス
+          - 
+            link: https://circleci.com/docs/api/v2
+          - 
+          - 
+          - 
+            link: https://circleci.com/docs/api/v1
+          - 
+          - 
+            name: プロジェクトの値と変数
+          - 
+            link: circleci-images
+          - 
+            name: 用語集
+            link: 用語集
+          - 
+  - 
+    icon: icons/sidebar/admin.svg
+    children:
+      - 
+      - 
+      - 
+        children:
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: Orb の管理
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: バックアップと復元
+      - 
+  - 
+    icon: icons/sidebar/admin.svg
+    children:
+      - 
+        children:
+          - 
+            name: 概要
+          - 
+          - 
+            name: アップグレード
+          - 
+            name: FAQ
+      - 
+        children:
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: 移行
+          - 
+      - 
+        children:
+          - 
+            name: 概要
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: Orb の管理
+          - 
+            name: VM サービス
+          - 
+          - 
+          - 
+            name: ロード バランサー
+          - 
+            name: 認証
+          - 
+          - 
+          - 
+          - 
+            name: セキュリティ
+          - 
+          - 
+          - 
+            name: バックアップと復元
+      - 
+        children:
+          - 
+            name: What's New in v2.48
+          - 
+          - 
+          - 
+            name: v2.48.3 Operations Guide
+      - 
+        children:
+          - 
+            name: v3.3 Overview
+          - 
+          - 
+          - 
+            name: v3.3 Operations Guide
+      - 
+        name: Server v3.1.x PDFs
+        children:
+          - 
+            name: v3.1 Overview
+          - 
+            name: v3.1 Installation Guide
+          - 
+            name: v3.1 Operations Guide
+      - 
+        name: Server v3.x PDFs
+        children:
+          - 
+            name: v3.0 Overview
+          - 
+            name: v3.0 Installation Guide
+          - 
+            name: v3.0 Operations Guide
+      - 
+        name: Server v2.19.x Install
+        children:
+          - 
+            name: What's New in v2.17
+          - 
+            name: What's New in v2.19.x
+          - 
+            name: Upgrade to v2.19.x
+  - 
+    icon: icons/sidebar/admin.svg
+    children:
+      - 
+        children:
+          - 
+            name: 概要
+          - 
+            link: nomad
+          - 
+            name: Metrics & Monitoring
+          - 
+          - 
+          - 
+          - 
+            name: インストール
+            link: aws
+          - 
+            name: Authentication
+      - 
+        children:
+          - 
+            name: 概要
+            link: 概要
+          - 
+            name: v2.19 Installation Guide
+            link: nomad
+          - 
+            link: monitoring
+          - 
+            link: nomad-metrics
+          - 
+          - 
+          - 
+            name: 認証
+            link: 認証
+          - 
+            name: VM サービス
+            link: vm-service
+          - 
+          - 
+            name: 証明書
+            link: 証明書
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: メンテナンス
+          - 
+          - 
+            name: セキュリティ
+          - 
+            name: トラブルシューティング
+            link: troubleshooting
+          - 
+          - 
+          - 
+            name: 稼働環境
+            link: 稼働環境
+          - 
+          - 
+            name: 謝辞
+            link: open-source
+      - 
+        name: Server v2.18 PDFs
+        children:
+          - 
+            name: What's New in v2.18
+            link: nomad
+          - 
+            name: v2.18.3 Installation Guide
+          - 
+            name: v2.18.3 Operations Guide
+      - 
+        name: Server v2.17.3 PDFs
+        children:
+          - 
+            name: What's New in v2.17
+            link: v.2.17-overview
+          - 
+            name: v2.17.3 Installation Guide
+          - 
+            name: v2.17.3 Operations Guide
+      - 
+        name: Server v2.16 PDFs
+        children:
+          - 
+            name: What's New in v2.16
+            link: v.2.16-overview
+          - 
+            name: v2.16 Installation Guide
+          - 
+            name: v2.16 Operations Guide
+      - 
+        children:
+          - 
+          - 
+          - 
+            link: circleci-ops-guide.pdf
+  - 
+    children:
+      - 
+      - 
+        name: Free
+      - 
+        name: Performance
+      - 
+        name: Scale
+      - 
+        name: Server
+  - 
+    icon: icons/sidebar/reference.svg
+ja:
+  - 
+    name: はじめよう
+    children:
+      - 
+        name: 会社概要
+        i18n_name: v2.19の新機能
+        children:
+          - 
+            link: ja
+          - 
+          - 
+            name: CircleCI について
+          - 
+            name: 概念
+          - 
+            name: FAQ
+      - 
+        name: オンボーディング
+      - 
+        children:
+          - 
+            name: 設定のチュートリアル
+          - 
+            name: クイックスタートガイド
+          - 
+            name: Hello World
+            i18n_name: Hello World
+          - 
+            name: Slack Orb の設定
+      - 
+        name: VCS との統合
+        children:
+          - 
+            name: GitHub
+          - 
+            name: Bitbucket
+          - 
+            name: GitLab
+      - 
+        name: 移行
+        i18n_name: Nomadメトリクス
+        children:
+          - 
+            name: CircleCI への移行ガイド
+          - 
+            name: AWS からの移行
+          - 
+            name: Azure DevOps からの移行
+          - 
+            name: Buildkite からの移行
+          - 
+            name: Github Actions からの移行
+          - 
+            name: GitLab からの移行
+          - 
+            name: Jenkins からの移行
+          - 
+            name: TeamCity からの移行
+          - 
+            name: Travis CI からの移行
+  - 
+    name: パイプライン
+    icon: icons/sidebar/pipelines.svg
+    children:
+      - 
+        name: 概要
+        i18n_name: v2.19の新機能
+        children:
+          - 
+            name: パイプラインの概要
+          - 
+            name: トリガーの概要
+          - 
+            name: パイプラインのスキップとキャンセル
+      - 
+        name: 機能
+        children:
+          - 
+            name: パイプラインのスケジューリング
+          - 
+            name: ワークフロー
+          - 
+            name: ジョブとステップ
+          - 
+            name: ワークスペース
+          - 
+            name: アーティファクト
+          - 
+            name: Docker レイヤーキャッシュ
+          - 
+            name: 同時実行
+          - 
+            name: 環境変数
+          - 
+            name: テストデータの収集
+          - 
+          - 
+            name: SSH を使用したデバッグ
+          - 
+            name: テスト分割と並列実行
+          - 
+          - 
+      - 
+        name: 最適化
+        children:
+          - 
+            name: 概要
+            i18n_name: v2.19の新機能
+          - 
+          - 
+            name: 依存関係のキャッシュ
+          - 
+            name: キャッシュ戦略
+          - 
+            name: パイプライン値とパラメーター
+      - 
+        children:
+          - 
+          - 
+          - 
+            name: ワークフローのスケジュール実行からパイプラインのスケジュール実行への移行
+          - 
+            name: パイプラインのスケジュール実行を夜間に設定する
+          - 
+            name: 複数のワークフローを使ったパイプラインのスケジュール実行
+      - 
+        name: チュートリアル
+        children:
+          - 
+            name: テストの分割
+  - 
+    name: 実行環境
+    icon: icons/sidebar/executors.svg
+    children:
+      - 
+        name: 会社概要
+        i18n_name: v2.19の新機能
+        children:
+          - 
+            name: はじめに
+          - 
+      - 
+        name: Docker
+        children:
+          - 
+            name: Docker の使用
+          - 
+            name: CircleCI イメージ
+          - 
+          - 
+          - 
+          - 
+          - 
+      - 
+        name: Linux VM
+      - 
+        name: macOS
+        children:
+          - 
+            name: macOS を使用する
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+      - 
+        name: Windows
+        children:
+          - 
+            name: Windows の使用
+          - 
+            name: Hello World
+            i18n_name: v2.19の新機能
+      - 
+        name: GPU
+        children:
+          - 
+            name: GPU を使用する
+      - 
+        name: Arm
+      - 
+        name: セルフホストランナー
+        children:
+          - 
+            i18n_name: v2.19の新機能
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+      - 
+        name: コンテナランナー
+      - 
+        name: マシンランナー
+        children:
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: CircleCI Server 上のマシンランナーのアップグレード
+          - 
+            name: マシンランナーの設定ファイルのリファレンス
+  - 
+    name: 設定ファイル
+    icon: icons/sidebar/configure.svg
+    children:
+      - 
+        name: 概要
+        i18n_name: v2.19の新機能
+        children:
+          - 
+            name: 設定ガイド
+          - 
+          - 
+      - 
+        name: 参考情報
+        children:
+          - 
+            name: 設定ファイルのリファレンス
+          - 
+          - 
+            name: 高度な設定
+          - 
+            name: JavaScript Node のデモ プロジェクトのビルド
+          - 
+      - 
+  - 
+    name: Orbs
+    icon: icons/sidebar/orbs.svg
+    children:
+      - 
+        name: Orb の使用
+        children:
+          - 
+          - 
+          - 
+            name: Orb に関するよくあるご質問
+      - 
+        name: Orb のオーサリング
+        children:
+          - 
+            i18n_name: v2.19の新機能
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: Orb のパブリッシュプロセス
+          - 
+            name: Orb 開発キット
+          - 
+      - 
+        name: チュートリアル
+        children:
+          - 
+            name: Slack Orb の使用
+      - 
+  - 
+    name: インサイト
+    icon: icons/sidebar/insights.svg
+    children:
+      - 
+        name: 概要
+        i18n_name: v2.19の新機能
+      - 
+        name: メトリクス用語集
+      - 
+      - 
+        name: テスト インサイト
+      - 
+      - 
+        name: Insights API
+        link: 'https://circleci.com/docs/api/v2#tag/Insights'
+  - 
+    name: プロジェクト
+    icon: icons/sidebar/projects.svg
+    children:
+      - 
+        name: 概要
+        i18n_name: v2.19の新機能
+      - 
+        name: settings
+        children:
+          - 
+            i18n_name: v2.19の新機能
+          - 
+            name: GitHub Checks の有効化
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: ステータスバッジ
+          - 
+            name: Using Credits
+            i18n_name: Webhook
+          - 
+            name: クレジットの使用
+      - 
+        name: security
+        children:
+          - 
+          - 
+            name: コンテキスト
+          - 
+            name: シークレットの安全な取り扱い
+          - 
+          - 
+            name: サプライチェーン攻撃への対策
+          - 
+            name: IP アドレスの範囲機能
+          - 
+          - 
+            name: 監査ログ
+          - 
+            name: CircleCI のセキュリティ対策
+      - 
+        children:
+          - 
+            i18n_name: v2.19の新機能
+          - 
+          - 
+          - 
+  - 
+    icon: icons/sidebar/examples.svg
+    children:
+      - 
+        name: 言語
+        children:
+          - 
+            name: 概要
+            i18n_name: v2.19の新機能
+          - 
+            name: Node
+          - 
+            name: Python
+      - 
+      - 
+        name: テスト
+        children:
+          - 
+            name: 概要
+          - 
+            name: ブラウザーでのテスト
+  - 
+    name: デプロイ
+    icon: icons/sidebar/deployment.svg
+    children:
+      - 
+      - 
+      - 
+        name: Artifactory へのデプロイ
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+        name: Google Cloud SDK の承認
+      - 
+      - 
+      - 
+        name: iOS アプリケーションのデプロイ
+      - 
+      - 
+      - 
+  - 
+    name: 参考情報
+    icon: icons/sidebar/reference.svg
+    children:
+      - 
+        children:
+          - 
+            name: 設定ファイルのリファレンス
+          - 
+            name: API v2
+            link: https://circleci.com/docs/api/v2
+          - 
+            name: API v2 の概要
+          - 
+          - 
+            name: API v1.1
+            link: https://circleci.com/docs/api/v1
+          - 
+          - 
+            name: プロジェクトの値と変数
+          - 
+          - 
+            name: 用語集
+          - 
+  - 
+    icon: icons/sidebar/admin.svg
+    children:
+      - 
+        children:
+          - 
+            i18n_name: v2.19の新機能
+          - 
+      - 
+      - 
+        children:
+          - 
+            i18n_name: v2.19の新機能
+          - 
+          - 
+          - 
+          - 
+            name: Orb の管理
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: バックアップと復元
+      - 
+  - 
+    icon: icons/sidebar/admin.svg
+    children:
+      - 
+        name: Server v2.19.x Install
+        children:
+          - 
+            name: 概要
+            i18n_name: v2.19の新機能
+          - 
+            name: What's New in v2.19.x
+          - 
+            name: アップグレード
+          - 
+            name: FAQ
+            i18n_name: アップグレード方法
+      - 
+        name: Server v2.19.x Operations
+        children:
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: 移行
+            i18n_name: Nomadメトリクス
+          - 
+      - 
+        children:
+          - 
+            name: 概要
+            i18n_name: v2.19の新機能
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: Orb の管理
+          - 
+            name: VM サービス
+          - 
+          - 
+          - 
+            name: ロード バランサー
+          - 
+            name: 認証
+          - 
+          - 
+          - 
+          - 
+            name: セキュリティ
+          - 
+          - 
+          - 
+            name: バックアップと復元
+      - 
+        children:
+          - 
+            name: What's New in v2.48
+          - 
+          - 
+          - 
+            name: v2.48.3 Operations Guide
+      - 
+        children:
+          - 
+            name: v3.3 Overview
+          - 
+          - 
+          - 
+            name: v3.3 Operations Guide
+      - 
+        name: Server v3.1.x PDFs
+        children:
+          - 
+            name: v3.1 Overview
+          - 
+            name: v3.1 Installation Guide
+          - 
+            name: v3.1 Operations Guide
+      - 
+        name: Server v3.x PDFs
+        i18n_name: Server v3.x PDFs
+        children:
+          - 
+            name: v3.0 Overview
+          - 
+            name: v3.0 Installation Guide
+          - 
+            name: v3.0 Operations Guide
+      - 
+        name: Server v2.19.x Install
+        i18n_name: Server v2.19.x Install
+        children:
+          - 
+            name: What's New in v2.17
+          - 
+            name: What's New in v2.19.x
+          - 
+            name: Upgrade to v2.19.x
+  - 
+    icon: icons/sidebar/admin.svg
+    children:
+      - 
+        name: Server v2.19.x Operations
+        children:
+          - 
+            name: 概要
+            i18n_name: v2.19の新機能
+          - 
+          - 
+            name: Metrics & Monitoring
+          - 
+            name: Replicated の更新
+          - 
+          - 
+            i18n_name: 概要
+          - 
+            name: インストール
+            i18n_name: 設定・モニタリング
+          - 
+            name: Authentication
+      - 
+        name: Server v2.19 PDFs
+        children:
+          - 
+            name: 概要
+            i18n_name: v2.19の新機能
+          - 
+            name: v2.19 Installation Guide
+          - 
+            name: v2.19 Operations Guide
+          - 
+          - 
+          - 
+          - 
+            name: 認証
+          - 
+            name: VM サービス
+          - 
+          - 
+            name: 証明書
+          - 
+            name: ユーザーアカウント
+          - 
+          - 
+          - 
+          - 
+          - 
+            name: メンテナンス
+          - 
+          - 
+            name: セキュリティ
+          - 
+            name: トラブルシューティング
+          - 
+            i18n_name: FAQ
+          - 
+          - 
+            name: アーキテクチャ
+          - 
+          - 
+            name: 謝辞
+      - 
+        name: Server v2.18 PDFs
+        children:
+          - 
+            name: What's New in v2.18
+          - 
+            name: v2.18.3 Installation Guide
+          - 
+            name: v2.18.3 Operations Guide
+      - 
+        name: Server v2.17.3 PDFs
+        children:
+          - 
+            name: What's New in v2.17
+          - 
+            name: v2.17.3 Installation Guide
+          - 
+            name: v2.17.3 Operations Guide
+      - 
+        name: Server v2.16 PDFs
+        children:
+          - 
+            name: What's New in v2.16
+          - 
+            name: v2.16 Installation Guide
+          - 
+            name: v2.16 Operations Guide
+      - 
+  - 
+    children:
+      - 
+      - 
+        name: Free
+        i18n_name: Free
+      - 
+        name: Performance
+        i18n_name: Performance
+      - 
+        name: Scale
+        i18n_name: Scale
+      - 
+        name: サーバー
+  - 
+    icon: icons/sidebar/reference.svg

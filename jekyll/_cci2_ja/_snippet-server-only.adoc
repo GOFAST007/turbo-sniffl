@@ -1,0 +1,1 @@
+[.serveronly]_このドキュメントはオンプレミス版 CircleCI Server のシステム管理者を対象としています。_

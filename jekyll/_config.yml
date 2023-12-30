@@ -1,0 +1,164 @@
+# Site settings
+title: "CircleCI Documentation"
+email: docs@cirleci.com
+description: > # this means to ignore newlines until "baseurl:"
+  The documentation site for CircleCI, the fastest testing platform on the
+  Internet.
+
+url: "https://ui.circleci.com" # the base hostname & protocol for your site
+baseurl: "/docs" # the subpath of your site, e.g. /blog
+gh_help_articles_url: "https://help.github.com/articles"
+gh_url: "https://github.com/circleci/circleci-docs"
+gh_private_org_url: "https://github.com/circleci"
+gh_public_org_url: "https://github.com/CircleCI-Public"
+cci_public_org_url: "https://app.circleci.com/pipelines/github/CircleCI-Public"
+devhub_base_url: "https://circleci.com/developer"
+blog_base_url: "https://circleci.com/blog"
+support_base_url: "https://support.circleci.com"
+noindex: false
+
+exclude:
+  - .jekyll-cache
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-asciidoc
+  - jekyll-last-modified-at
+
+# Approximate distance, with customizable threshold,
+# ie: at depth one 366 days becomes 1 year ago instead of 1 year and 1 day ago
+jekyll_timeago:
+  depth: 1
+
+algolia:
+  application_id: U0RXNGRK45
+  api_key: dd49f5b81d238d474b49645a4daed322 # search-only API Key; safe for front-end code
+  index_name: documentation
+  index_name_orbs: orbs-prod
+  index_name_cimgs: images_prod
+  extensions_to_index:
+    - html
+    - md
+    - adoc
+  max_record_size: 20000
+  nodes_to_index: "p,h1"
+  settings:
+    highlightPreTag: "<strong>"
+    highlightPostTag: "</strong>"
+    attributesToSnippet: ["content:80", "headings", "title"]
+    attributesToHighlight: ["content:80", "headings", "title"]
+    minProximity: 3
+
+toc:
+  min_level: 1
+  max_level: 6
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+liquid:
+  error_mode: strict
+
+server-attributes: &server
+  imagesdir: /docs/assets/img/docs/
+  relfileprefix: ../
+  relfilesuffix: /
+  outfilesuffix: /index.html
+  serverversion4: 4.0.5
+  serverversion41: 4.1.6
+  serverversion42: 4.2.2
+  serverversion43: 4.3.1
+  serverversion: 3.4.8
+  terraformversion: 0.15.4
+  kubectlversion: 1.19
+  helmversion: 3.9.2
+  helmdiffversion: 3.5.0
+  kotsversion: 1.65.0
+
+asciidoc:
+  attributes: *server
+
+asciidoctor:
+  base_dir: :docdir
+  safe: unsafe
+  attributes: *server
+
+collections:
+  cci2:
+    name: "2.0 Docs"
+    site_section: true
+    output: true
+    permalink: :path/
+    prefix: "/"
+    selectorName: "2.0"
+  api:
+    name: "API Docs"
+    site_section: true
+    output: true
+    permalink: /api/:path/
+    prefix: "/api"
+    selectorName: "API"
+  cci2_ja:
+    name: "2.0 Docs"
+    site_section: true
+    output: true
+    permalink: /ja/:path/
+    prefix: "/ja"
+    selectorName: "2.0"
+  style:
+    name: "Style Guide"
+    site_section: true
+    output: true
+    permalink: /style/:path/
+    prefix: "/style"
+    selectorName: "style"
+
+twitter_username: circleci
+github_username: circleci
+
+defaults:
+  - scope:
+      path: ""
+      type: "cci2"
+    values:
+      lang: "en"
+
+  - scope:
+      path: ""
+      type: "cci2_ja"
+    values:
+      lang: "ja"
+
+  - scope:
+      path: ""
+      type: "style"
+    values:
+      lang: "en"
+
+  - scope:
+      path: ""
+    values:
+      hide: false
+      search: true
+      toc: true # Enable TOC by default
+      suggested: false # Disable helpful resources section by default
+      sitemap: true # Enable sitemap by default
+      readtime: true # Enable Read Time by default
+      contentTags: null
+      sectionTags: null
+
+t:
+  translation_in_progress:
+    ja: "このページはただいま翻訳中です"
+
+segment: "mAJ9W2SwLHgmJtFkpaXWCbwEeNk9D8CZ"
+
+analytics:
+  events:
+    go_button_clicked: go-button-clicked
+rollbar_env: development
+
+# Optimizely SDK key for dev env
+optimizely: "GfYszBpMkefBSwiiEkH3b3"
+# server_version: "2.18.4"
